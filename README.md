@@ -2,11 +2,11 @@
 **AI-Powered Sentinel for HR Violation Detection and Confidential Data Protection**
 
 ##  Overview
-**VigilAI** is a real-time, AI-driven system that monitors workplace communication channels (emails, chats, transcripts) to:
+**Echo Block** is a real-time, AI-driven system that monitors workplace communication channels (emails, chats, transcripts) to:
 - Detect and flag HR violations (harassment, discrimination, abuse of power, etc.)
 - Prevent the leakage of confidential or sensitive corporate information
 
-By leveraging Natural Language Processing (NLP) and intelligent pattern recognition, VigilAI enhances compliance, safeguards employee well-being, and enforces data security — all automatically.
+By leveraging Natural Language Processing (NLP) and intelligent pattern recognition, Echo Block enhances compliance, safeguards employee well-being, and enforces data security — all automatically.
 
 ---
 
