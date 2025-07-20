@@ -7,7 +7,7 @@ import speech_recognition as sr
 from fpdf import FPDF
 from pydub import AudioSegment
 
-# --- Simulated IBM Granite Response Function ---
+
 def simulate_granite_analysis(transcript):
     violation_patterns = [
         {"keyword": "confidential", "category": "Confidentiality Breach", "risk_level": "High", "suggestion": "Remind employees of NDA terms."},
@@ -55,7 +55,7 @@ def simulate_granite_analysis(transcript):
                 })
     return violations
 
-# --- PDF Report Generator ---
+
 def clean_text(text):
     return (
         text.replace('\u2019', "'")
@@ -84,8 +84,6 @@ def generate_pdf(transcript, violations):
     temp_file = tempfile.NamedTemporaryFile(delete=False, suffix=".pdf")
     pdf.output(temp_file.name)
     return temp_file.name
-
-# --- Audio to Text Conversion ---
 def transcribe_audio(audio_file_path):
     recognizer = sr.Recognizer()
     audio = AudioSegment.from_file(audio_file_path)
@@ -100,7 +98,6 @@ def transcribe_audio(audio_file_path):
         except sr.RequestError as e:
             return f"Could not request results; {e}"
 
-# --- Streamlit UI ---
 st.title("Granite ComplianceCop - AI Compliance Assistant")
 st.write("Upload a meeting transcript or audio and detect potential compliance violations.")
 
